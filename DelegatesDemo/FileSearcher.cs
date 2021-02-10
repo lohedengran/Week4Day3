@@ -7,6 +7,8 @@ namespace DelegatesDemo
 {
     class FileSearcher
     {
+        //delegate bool FileFilter(string filePath);
+
         public void ListFilesInDirectory(string dirPath, Func<string, bool> predicate)
         {
             string[] filePaths = Directory.GetFiles(dirPath);
